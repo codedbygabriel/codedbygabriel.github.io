@@ -28,5 +28,6 @@
 			rdn_emoji.innerText = `../emojis/${random_emoji()}`;
 		}
 	}, 1000);
+
 }());
 
