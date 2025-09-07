@@ -10,6 +10,17 @@
 		return variants[randomInteger];
 	}
 
+	document.addEventListener('keypress', function(event){
+		switch (event.key) {
+			case "j":
+				window.scrollBy(0, 200);
+				break;
+			case "k":
+				window.scrollBy(0, -200);
+				break;
+		}
+	})
+
 	rdn_emoji.addEventListener('mouseover', function(){
 		if (!has_hovered) {
 			alert("You're too curious, don't try peeking into things")
@@ -28,6 +39,6 @@
 			rdn_emoji.innerText = `../emojis/${random_emoji()}`;
 		}
 	}, 1000);
-
+	
 }());
 
