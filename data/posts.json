@@ -1,8 +1,0 @@
-[ 
-	{ "title": "Yet Another Directory Organizer", "content": "YADO is a small python script that allow the user to organize a certain (variable) directory quickly, it uses no external libraries other than Python's native. ", "link":"https://github.com/codedbygabriel/yado" },
-	{ "title": "Hyprland Wallpaper Suite", "content": "It's a Wallpaper Suite made in Lua Scripting Language, it auto-detects all the monitor of the user and prompts a solicitation in case he wants to change the wallpaper, facilitates the usage of Hyprpaper on any shell too.", "link": "https://github.com/codedbygabriel/HyprlandWallpaperChanger"},
-	{ "title": "PyWpp", "content": "A Lightweight Gui Hyprland Wallpaper Changer Written in Python. ", "link": "https://github.com/codedbygabriel/PyWpp"},
-	{ "title": "Dotfiles", "content": "My personal linux configuration written in various languages.", "link": "https://github.com/codedbygabriel/dotfiles"},
-	{ "title": "PupHealth", "content": "Patient management application, vaccines and Veterinary report.", "link": "https://github.com/codedbygabriel/PupHealth"}
-]
-
