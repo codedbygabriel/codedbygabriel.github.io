@@ -5,17 +5,63 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="icon" type="image/svg" href="./images/favicon/favicon.svg" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script type="module" src="./components/header/header.js" defer></script>
+	<script type="module" src="./js/main.js" defer></script>
 	<title>Gabriel's Rabbit Hole Ი𐑼</title>
 </head>
 
 <body>
-	<h1>Hello, world!</h1>
+	<main class="appContainer">
+		<app-header></app-header>
 
-	<small>
-		I'll add a better way after.
-		<br />
-		<a href="https://www.flaticon.com/free-icons/rabbit" title="rabbit icons"> Favicon: @Flaticon. </a>
-	</small>
+		<!--Introduction-->
+		<article class="sectionContainer">
+			<p>Welcome to my personal website! I'm truly happy you're here.</p>
+			<br>
+			<p>As you may see, it's a simple place, it only contains the necessary information about <em>myself</em>,
+				what i can <em>offer</em> and some <em>blogposts</em>.</p>
+			<p>Everything here's written in english, but, you may contact me in different languages such as:
+				<strong>Brazillian Portuguese</strong>, <strong>Spanish</strong>
+				and <strong>English</em>.</strong>
+			</p>
+		</article>
+		<article class="sectionContainer">
+			<h2 class="stackHeader">Current Stack</h2>
+			<small>My toolkit revolves around mostly <em>back-end | front-end</em> and
+				automation.</small>
+			<section class="stack">
+				<details>
+					<summary>[back-end]</summary>
+					<ul>
+						<li>Java</li>
+						<li>Node</li>
+						<li>Python</li>
+						<li>Lua</li>
+						<li>C#</li>
+					</ul>
+				</details>
+				<details>
+					<summary>[front-end]</summary>
+					<ul>
+						<li>HTML / CSS;</li>
+						<li>Javascript;</li>
+						<li>Frameworks.</li>
+					</ul>
+				</details>
+				<details>
+					<summary>[miscellaneous]</summary>
+					<ul>
+						<li>Git;</li>
+						<li>Github, Github Projects;</li>
+						<li>Linux, Linux Terminal, Bash and other shells.</li>
+					</ul>
+				</details>
+			</section>
+		</article>
+	</main>
+	<!-- <a href="https://www.flaticon.com/free-icons/rabbit" title="rabbit icons"> Favicon: @Flaticon. </a> -->
 </body>
 
 </html>
