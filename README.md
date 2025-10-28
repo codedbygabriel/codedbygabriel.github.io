@@ -7,7 +7,7 @@ Most of my early days on the internet where marked by *websites, blogs, strange 
 That's the reason i created this website, to serve the purpose of my old desires
 and dreams: **be heard**.
 
-- [ ] The base site itself;
+- [x] The base site itself;
 - [ ] Creation of my skills synopsis;
 - [ ] Creation of BlogPosts structure;
 - More!
