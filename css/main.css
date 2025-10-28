@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--font-title: 'Noto Serif';
+	--font: 'Inter';
+	--font-title-weight: 400;
+
+	--white: #f2f2f2;
+	--white-greyish: #e3e1e1;
+	--grey: #a6a6a6;
+	--dark-grey: #737373;
+	--black-grey: #404040;
+	--black: #262626;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: var(--font-title);
+	font-weight: var(--font-title-weight);
+	color: var(--black);
+}
+
+p,
+small,
+address,
+a,
+li,
+sumamry,
+details {
+	color: var(--black-grey);
+	font-family: var(--font);
+}
+
+summary,
+details,
+li {
+	font-size: 1rem;
+}
+
+summary {
+	cursor: pointer;
+	font-size: 1.1rem;
+	list-style: none;
+}
+
+details > ul > li {
+	list-style: none;
+	margin-left: 1rem;	
+	font-size: 0.9rem;
+}
+
+/*	Container	*/
+/*	TODO: Move to a separate file	*/
+
+.appContainer {
+	margin: 0 auto;
+	max-width: 1024px;
+
+	padding: 2rem;
+}
+
+.sectionContainer {
+	max-width: 768px;
+	margin: 2rem 0 2rem 0;
+}
+
+.appTitle {
+	font-size: 3rem;
+}
+
+.appHeader {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.darkMode {
+	background-color: var(--black);
+}
+
+.darkModeTitle {
+	color: var(--white);
+}
+
+.darkModeText {
+	color: var(--white-greyish);
+}
+
+.stack {
+	margin: 1rem 0 1rem 0;
+}
+.stackHeader {
+	font-size: 2rem;
+}
