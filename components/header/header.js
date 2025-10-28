@@ -33,8 +33,7 @@ class Header extends HTMLElement {
 
 		shadow.adoptedStyleSheets.push(css);
 	}
-
-	themeSwitcher() {
+	getElements() {
 		const body = document.querySelector('body');
 		const small = this._shadowRoot.querySelectorAll('small');
 		small[0].style.cursor = 'pointer';
@@ -57,16 +56,28 @@ class Header extends HTMLElement {
 			small,
 		];
 
-		small[0].addEventListener('click', function(event) {
+		return [body, small, title, text];
+	}
+	themeSwitcher() {
+		const [body, small, title, text] = this.getElements();
+
+		function changeThemes() {
 			body.classList.toggle('darkMode');
 			text.forEach((_) => _.forEach((el) => el.classList.toggle('darkModeText')));
 			title.forEach((_) => _.forEach((el) => el.classList.toggle('darkModeTitle')));
+			small[0].textContent = '[turn on the lights]';
 
 			if (body.classList.contains('darkMode')) {
 				small[0].textContent = '[turn on the lights]';
 			} else {
 				small[0].textContent = '[turn off the lights]';
 			}
+		}
+
+		if (JSON.parse(localStorage.getItem('themePreference')) === 'dark') changeThemes();
+
+		small[0].addEventListener('click', function(event) {
+			changeThemes();
 		});
 	}
 }
