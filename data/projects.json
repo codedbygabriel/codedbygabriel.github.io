@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Generic Linux File Explorer",
+        "description": "A CLI tool that allows the user to navigate through files, remove and copy files or directories, it does not use any dependencies.",
+        "image": false,
+        "link": "https://github.com/codedbygabriel/GLFE"
+    },
+    {
+        "title": "My Cowork",
+        "description": "A College project alike a <em>google</em> for Cowork places, it features login, comments, likes, image bindings, maps and search for cowork places according to your zip-code (must be from Brazil).",
+        "image": false,
+        "link": "https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-2-pe1-t02-mycowork/src/"
+    },
+    {
+        "title": "Fake Project",
+        "description": "A College project alike a <em>google</em> for Cowork places, it features login, comments, likes, image bindings, maps and search for cowork places according to your zip-code (must be from Brazil).",
+        "image": false,
+        "link": false
+    }
+]
