@@ -8,6 +8,6 @@ That's the reason i created this website, to serve the purpose of my old desires
 and dreams: **be heard**.
 
 - [x] The base site itself;
-- [ ] Creation of my skills synopsis;
+- [x] Creation of my skills synopsis;
 - [ ] Creation of BlogPosts structure;
 - More!
