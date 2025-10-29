@@ -33,7 +33,7 @@ class Header extends HTMLElement {
 
 		shadow.adoptedStyleSheets.push(css);
 	}
-	getElements() {
+	async getElements() {
 		const body = document.querySelector('body');
 		const small = this._shadowRoot.querySelectorAll('small');
 		small[0].style.cursor = 'pointer';
@@ -58,8 +58,8 @@ class Header extends HTMLElement {
 
 		return [body, small, title, text];
 	}
-	themeSwitcher() {
-		const [body, small, title, text] = this.getElements();
+	async themeSwitcher() {
+		const [body, small, title, text] = await this.getElements();
 
 		function changeThemes() {
 			body.classList.toggle('darkMode');
