@@ -6,7 +6,7 @@
 	--font-title-weight: 400;
 
 	--white: #f2f2f2;
-	--white-greyish: #e3e1e1;
+	--white-greyish: #cfcfcf;
 	--grey: #a6a6a6;
 	--dark-grey: #737373;
 	--black-grey: #404040;
@@ -42,6 +42,7 @@ sumamry,
 details {
 	color: var(--black-grey);
 	font-family: var(--font);
+	text-decoration: none;
 }
 
 summary,
@@ -100,11 +101,29 @@ details > ul > li {
 	color: var(--white-greyish);
 }
 
+.darkModeText > a{
+	color: var(--white-greyish);
+}
+
 .stack {
 	margin: 1rem 0 1rem 0;
 }
 .sectionHeader {
 	font-size: 2rem;
+}
+
+.projectsContainer {
+	margin: 1rem 0 1rem 0;
+}
+.projectsContainer > section > h3 {
+	font-size: 1.5rem;
+}
+.projectsContainer > section {
+	margin-top: 0.8rem;
+}
+.projectsContainer > section > p {
+	margin-top: 0.2rem;
+	font-size: 0.9rem;
 }
 
 @media (max-width: 500px) {
@@ -118,6 +137,12 @@ details > ul > li {
 		font-size: 0.8rem;
 	}	
 	summary {
+		font-size: 0.8rem;
+	}
+	.projectsContainer > section > h3 {
+		font-size: 1.2rem;
+	}
+	.projectsContainer > section > p {
 		font-size: 0.8rem;
 	}
 }
