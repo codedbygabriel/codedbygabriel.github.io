@@ -57,9 +57,9 @@ summary {
 	list-style: none;
 }
 
-details > ul > li {
+details>ul>li {
 	list-style: none;
-	margin-left: 1rem;	
+	margin-left: 1rem;
 	font-size: 0.9rem;
 }
 
@@ -89,25 +89,10 @@ details > ul > li {
 	align-items: flex-start;
 }
 
-.darkMode {
-	background-color: var(--black);
-}
-
-.darkModeTitle {
-	color: var(--white);
-}
-
-.darkModeText {
-	color: var(--white-greyish);
-}
-
-.darkModeText > a{
-	color: var(--white-greyish);
-}
-
 .stack {
 	margin: 1rem 0 1rem 0;
 }
+
 .sectionHeader {
 	font-size: 2rem;
 }
@@ -115,34 +100,95 @@ details > ul > li {
 .projectsContainer {
 	margin: 1rem 0 1rem 0;
 }
-.projectsContainer > section > h3 {
+
+.projectsContainer>section>h3 {
 	font-size: 1.5rem;
 }
-.projectsContainer > section {
+
+.projectsContainer>section {
 	margin-top: 0.8rem;
 }
-.projectsContainer > section > p {
+
+.projectsContainer>section>p {
 	margin-top: 0.2rem;
 	font-size: 0.9rem;
 }
 
+.blogEntries {
+	margin: 0.9rem 0 0.9rem 0;
+}
+
+.blogAnchor {
+	font-size: 0.9rem;
+}
+
+.blogAnchorTitle {
+	background-color: #333;
+	color: #f2f2f2;
+	padding: 0.3rem;
+
+	cursor: pointer;
+}
+
+.postModal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	z-index: 1000;
+
+	border: none;
+	border-radius: 1rem 2rem;
+	outline: none;
+
+	padding: 2rem;
+	width: 768px;
+	height: 768px;
+	
+	overflow: scroll;
+}
+.sectionModal {
+	display: flex;
+	flex-flow: column wrap;
+	margin: 1rem 0 1rem 0;
+	gap: 1rem;
+
+	background-color: #b3b3b30d;
+	border-radius: 0.5rem 1rem;
+	padding: 1rem;
+
+	scrollbar-width: none;
+}
+.blogpostHeader {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
 @media (max-width: 500px) {
 	.appTitle {
 		font-size: 2rem;
 	}
+
 	.sectionHeader {
 		font-size: 1.5rem;
 	}
+
 	p {
 		font-size: 0.8rem;
-	}	
+	}
+
 	summary {
 		font-size: 0.8rem;
 	}
-	.projectsContainer > section > h3 {
+
+	.projectsContainer>section>h3 {
 		font-size: 1.2rem;
 	}
-	.projectsContainer > section > p {
+
+	.projectsContainer>section>p {
 		font-size: 0.8rem;
 	}
 }
