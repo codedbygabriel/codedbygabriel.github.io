@@ -9,5 +9,5 @@ and dreams: **be heard**.
 
 - [x] The base site itself;
 - [x] Creation of my skills synopsis;
-- [ ] Creation of BlogPosts structure;
+- [x] Creation of BlogPosts structure;
 - More!
