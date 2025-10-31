@@ -1,0 +1,15 @@
+[
+    {
+        "author": "João Gabriel",
+        "title": "Blogs, hello!",
+        "content": [
+            "<p>Welcome to the first post of this website! I'm so happy to make this come true, i've always wanted a secret place i can type my delusions =)</p>",
+            "<p>As long as this <code>blogposts.json</code> is fetched, this page will contain my dear thoughts.<br>Well, i have nothing to say for now, i'm pretty busy with a project (<em>My Cowork)</em> i'm yet to finish.</p>",
+            "<p>Speaking of <em>My Cowork</em>, it's been a truly harsh experience to work with people that <strong>hate</strong> working apparently, but, on a brighter side, as hard as the project gets, the more i get envolved and learn more.<br>From things i've heard but never used <em>(base64, for example)</em> to <strong>web-components</strong>! I'm loving my progress in web development.</p>",
+			"<p>Well, can't say it does not come without doubts. I really had to grind a lot of knowledge for the sake of delivering the functions properly, i'm not a genius or prodigee in tech, the hours i've spent in <a href='https://developer.mozilla.org/en-US/'><strong>MDN</strong></a>, nights i saw become mornings. But they're all worth the pain.</p>",
+			"<img width='200px' src='https://i.pinimg.com/736x/53/14/d9/5314d9ccb56d8ebf93e4e9b7b2b795ff.jpg'>",
+			"<p>Thanks for reading it, i really value your time and presence.</p>"
+        ],
+        "tags": ["first-post", "cool-tags"]
+    }
+]
