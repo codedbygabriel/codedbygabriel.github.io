@@ -1,6 +1,25 @@
 [
     {
         "author": "João Gabriel",
+        "title": "'Work-minded people' Against Lazy Ones.",
+        "content": [
+			"<h2>A vent about caring about other's work.</h2>",
+			"<p>It's almost christmas isn't it? It also means it's about time to end my current college semester, and with it, my current group will be separated.</p>",
+			"<p>Actually that's not a bad thing, i've learned <strong>a lot</strong> during this semester, from managing people in the simulated <em>Scrum</em> environment to coding things others <strong>will</strong> see and rate.</p>",
+			"<p>Turns out i figured out my flaws, i'm learning and improving in my front-end designs <em>(That can be seen in my latest project, Vimiest)</em>. But also found my strenghts, i'm a pretty good tinker! I got pretty good at code analysis, reviewing changes and planning upfront to get ahead of the challanges.</p>",
+			"<p>That code analysis and planning skill did not came from any course, it actually came from being able to making my group work, obviously, some colleagues were already developing with me (Like <a style='outline: none; color: #555;' target='_blank' href='https://github.com/JPGHP'>João Paulo</a>, for example.), but, that does not go the same way as some of them.</p>",
+			"<p>For context, i'm not being arrogant. I've made videos about git to help them understand how branches worked, how the project were setup (the file structure), how components were load... But all of that came out to be voided.</p>",
+			"<p>In a way, i'm not saying they were not cappable of doing the work, after all, twas but simple plain html and some javascript, what i'm <strong>saying</strong> is: <em>How are people so lazy?</em></p>",
+			"<p>They asked how a header could be build, i've responded it. Then, they've ask how are they supposed to use a certain function in the source code, i explained it. But nothing came out of that tireless guidance. Even some disrespectful saying were shouted to us who tried to help. But only then, when me and João Paulo had to grind to progress the project, we became better developers.</p>",
+			"<blockquote><em>We cannot change who people are, but certainly, we can learn how to not become one of them.</em></blockquote>",
+			"<img src='https://i.pinimg.com/1200x/37/1a/f6/371af691380a747d163367ebd6ed2b41.jpg' width='250px'>",
+			"<p>In short, I'm somewhat greatful for having those troubles during this college semester, it helped me see that i can lead a team to achieve something, certainly, many code decisions i've taken i would not consider today. I'd simplify, or change some code behaviors to help them get along with it more. But i'm sure i've done the best i can.</p>",
+			"<p>As always, thanks for reading, it's a pleasure to provide minutes of reading to you. Hope this story motivates you somehow! Bye!</p>"
+        ],
+        "tags": ["personal-story", "programming", "college-story"]
+    },
+    {
+        "author": "João Gabriel",
         "title": "Blogs, hello!",
         "content": [
             "<p>Welcome to the first post of this website! I'm so happy to make this come true, i've always wanted a secret place i can type my delusions =)</p>",

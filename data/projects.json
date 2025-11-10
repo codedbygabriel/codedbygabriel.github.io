@@ -1,5 +1,11 @@
 [
     {
+        "title": "Vimiest",
+        "description": "A Web To Do application that uses vim-motions-like keybinds. ",
+        "image": false,
+        "link": "https://github.com/codedbygabriel/Vimiest"
+    },
+    {
         "title": "Generic Linux File Explorer",
         "description": "A CLI tool that allows the user to navigate through files, remove and copy files or directories, it does not use any dependencies.",
         "image": false,
