@@ -30,7 +30,6 @@ h4,
 h5 {
 	font-family: var(--font-title);
 	font-weight: var(--font-title-weight);
-	color: var(--black);
 }
 
 p,
@@ -40,7 +39,6 @@ a,
 li,
 sumamry,
 details {
-	color: var(--black-grey);
 	font-family: var(--font);
 	text-decoration: none;
 }
@@ -197,4 +195,17 @@ details>ul>li {
 	.projectsContainer>section>p {
 		font-size: 0.8rem;
 	}
+}
+
+.lightModeBackground {
+	background-color: var(--white);
+}
+.lightModeText,
+.lightModeText:visited a,
+.lightModeText:link a,
+.lightModeText a{
+	color: var(--black-grey);	
+}
+.lightModeHeader {
+	color: var(--black);	
 }
