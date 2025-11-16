@@ -122,6 +122,10 @@ details>ul>li {
 .blogAnchor {
 	font-size: 0.9rem;
 	padding: 0.5rem 0;
+	gap: 0.5rem;
+	display: flex;
+	flex-flow: row wrap;
+	cursor: pointer;
 }
 
 .blogAnchorTitle {
@@ -130,6 +134,43 @@ details>ul>li {
 	padding: 0.1rem;
 
 	cursor: pointer;
+}
+
+.bloggingSearch {
+	display: block;
+	margin-top: 0.5rem;
+
+	padding: 0.5rem;
+	border-radius: 0.3rem;
+	outline: none;
+	border: none;
+	width: 50px;
+	text-align: center;
+}
+
+.animateShrink {
+	animation: shrink 1s ease-in-out forwards;
+}
+
+.bloggingSearch:focus {
+	animation: grow 1s ease-in-out forwards;
+}
+@keyframes shrink {
+	from {
+		width: 400px;
+	}
+	to {
+		width: 50px;
+	}
+}
+
+@keyframes grow {
+	from {
+		width: 50px;
+	}
+	to {
+		width: 400px;
+	}
 }
 
 .postModal {
