@@ -58,10 +58,16 @@ async function loadBlogposts() {
 		throw new Error("JSON Vazio, não haverá blogposts.");
 	let count = 0;
 	blogposts.forEach((blogpost) => {
-		const blogWrapper = document.createElement("p");
-		blogWrapper.classList.add("blogAnchor");
+		const blogWrapper = document.createElement("div");
+		const blogText = document.createElement("p");
 
-		blogWrapper.innerHTML = `${++count}. ${blogpost.title}${blogpost.date ? " - " + blogpost.date : ""}`;
+		blogWrapper.classList.add("blogAnchor");
+		blogText.classList.add("blogText");
+
+		blogText.textContent = blogpost.title;
+		blogWrapper.insertAdjacentHTML("afterbegin", `<span>${++count}. </span>`);
+		blogWrapper.insertAdjacentElement("beforeend", blogText);
+
 		blogWrapper.addEventListener("click", (event) =>
 			generatePostView(blogpost),
 		);
@@ -126,7 +132,20 @@ function generatePostView(blogpost) {
 }
 
 function blogSearchHandler(element) {
-	// wip
+	const blogs = document.querySelectorAll(".blogAnchor");
+
+	if (element.value.length <= 0) {
+		blogs.forEach((blog) => (blog.style.display = "flex"));
+		return;
+	}
+
+	blogs.forEach((blog) => {
+		const condition = blog.children[1].textContent
+			.toLowerCase()
+			.includes(element.value.toLowerCase());
+		if (!condition) blog.style.display = "none";
+		else blog.style.display = "flex";
+	});
 }
 
 (async function() {
@@ -134,5 +153,17 @@ function blogSearchHandler(element) {
 	await loadBlogposts();
 	const input = document.getElementsByName("search-input")[0];
 
+	input.addEventListener("blur", (event) => {
+		input.classList.add("animateShrink");
+		input.placeholder = "🔎";
+	});
+	input.addEventListener("focus", (event) => {
+		input.classList.remove("animateShrink");
+		input.placeholder = "Search, be free.";
+	});
+
 	input.addEventListener("input", (event) => blogSearchHandler(input));
+	input.addEventListener("keydown", (event) => {
+		if (event.key === "Escape") input.blur();
+	});
 })();
