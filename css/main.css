@@ -155,6 +155,7 @@ details>ul>li {
 .bloggingSearch:focus {
 	animation: grow 1s ease-in-out forwards;
 }
+
 @keyframes shrink {
 	from {
 		width: 400px;
@@ -235,6 +236,24 @@ details>ul>li {
 
 	.projectsContainer>section>p {
 		font-size: 0.8rem;
+	}
+
+	@keyframes shrink {
+		from {
+			width: 250px;
+		}
+		to {
+			width: 50px;
+		}
+	}
+
+	@keyframes grow {
+		from {
+			width: 50px;
+		}
+		to {
+			width: 250px;
+		}
 	}
 }
 
